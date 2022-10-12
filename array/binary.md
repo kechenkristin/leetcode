@@ -1,7 +1,10 @@
-##binary search
+## binary search
 1. note
+
 [left, right]
+
 是闭就沾一： 左闭 left = middle + 1; 右闭 right = middle - 1
+
 两闭加等于： 如果是两个闭区间 while(left <= right), 反之没有 “=”
 
 2. code
@@ -25,10 +28,17 @@ class Solution {
 }
 ```
 
+
 3. exercise
 
 704 https://leetcode.com/submissions/detail/819655864/
 
 35 https://leetcode.com/submissions/detail/820384962/ 
 
-34 
+34 https://leetcode.com/submissions/detail/820410885/
+
+69 https://leetcode.com/submissions/detail/821144453/
+
+367 https://leetcode.com/submissions/detail/821162308/
+
+
