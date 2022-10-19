@@ -1,31 +1,9 @@
-## LinkedList
+## 203: remove node 
 
-### slides
-- https://sp18.datastructur.es/
-
-### notes and codes
-
-- cs61b exercise
-see more in pdf doc
-
-- cs61b linked list
-
-https://github.com/kechenkristin/CS61B/blob/main/lab2/Intlist/IntList.java
-
-
-- circular double linked list( linked list deque)
-
-https://github.com/kechenkristin/CS61B/blob/main/proj1a/LinkedListDeque.java
-
-- resource
-
-https://github.com/kechenkristin/leetcode-master/blob/master/problems/%E9%93%BE%E8%A1%A8%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.md
-
-### reverse
-#### Link
+### Link
 https://leetcode.com/problems/remove-linked-list-elements/submissions/
 
-#### version1
+### version1
 ```java
  * Definition for singly-linked list.
  * public class ListNode {
@@ -57,7 +35,7 @@ class Solution {
 }
 ```
 
-#### version2
+### version2
 ```java
 public ListNode removeElements(ListNode head, int val) {
         if (head == null) return head;
@@ -69,15 +47,11 @@ public ListNode removeElements(ListNode head, int val) {
         while (ptr != null) {
             if (ptr.val == val) {
                 pre.next = ptr.next;
-            } else { 
-		pre = pre.next;
+            } else {
+                pre = pre.next;
             }
             ptr = ptr.next;
-        }
+        }  
         return sential.next;
-    }
+    } 
 ```
-
-### 707 design linkedList
-#### Link 
-https://leetcode.com/submissions/detail/825892586/
