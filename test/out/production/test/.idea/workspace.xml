@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/RemoveDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plusOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../array/fastSlowPointer.md" beforeDir="false" afterPath="$PROJECT_DIR$/../array/fastSlowPointer.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../linkedlist/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linkedlist/note.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -37,13 +36,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/kristin/study/leetcode/test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kristin/study/exeter/year2/ECM2414/ca/CardGame&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.plusOne">
     <configuration name="RemoveDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RemoveDuplicate" />
@@ -95,11 +94,6 @@
           <url>file://$PROJECT_DIR$/RemoveDuplicate.java</url>
           <line>23</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/plusOne.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

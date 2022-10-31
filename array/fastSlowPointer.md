@@ -26,5 +26,7 @@ class Solution {
 
 977 https://leetcode.com/submissions/detail/823974695/
 
+26 https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/
+
 
 
