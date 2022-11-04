@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RemoveDuplicate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plusOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../array/fastSlowPointer.md" beforeDir="false" afterPath="$PROJECT_DIR$/../array/fastSlowPointer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linkedlist/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/../linkedlist/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClosetNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingFriends.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CountingBits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/plusOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/plusOne.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +32,37 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GdkIyYxoacrpScZ7gfDMqrk5JD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/kristin/study/leetcode/test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kristin/study/leetcode/test&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.plusOne">
+}</component>
+  <component name="RunManager" selected="Application.CountingBits">
+    <configuration name="CountingBits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountingBits" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RemoveDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RemoveDuplicate" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="adRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adRotation" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,6 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountingBits" />
+        <item itemvalue="Application.adRotation" />
         <item itemvalue="Application.plusOne" />
         <item itemvalue="Application.RemoveDuplicate" />
       </list>
