@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/adRotation.java" afterDir="false" />
-    </list>
+    <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +24,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GdkIyYxoacrpScZ7gfDMqrk5JD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +38,21 @@
     &quot;last_opened_file_path&quot;: &quot;/home/kristin/study/leetcode/test&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.adRotation">
+  <component name="RunManager" selected="Application.Fib">
+    <configuration name="CountingBits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CountingBits" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fib" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RemoveDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RemoveDuplicate" />
       <module name="test" />
@@ -62,6 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fib" />
+        <item itemvalue="Application.CountingBits" />
         <item itemvalue="Application.adRotation" />
         <item itemvalue="Application.plusOne" />
         <item itemvalue="Application.RemoveDuplicate" />

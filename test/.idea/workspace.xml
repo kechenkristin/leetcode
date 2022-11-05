@@ -5,13 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ClosetNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingFriends.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CountingBits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adRotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interviews/JPMorgan/Fib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interviews/JPMorgan/checkSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interviews/JPMorgan/powerOfTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interviews/JPMorgan/toogleCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClosetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviews/JPMorgan/ClosetNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingFriends.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviews/JPMorgan/CodingFriends.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CountingBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviews/JPMorgan/CountingBits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adRotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/interviews/JPMorgan/adRotation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/test/plusOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/plusOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/CountingBits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/adRotation.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,30 +45,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kristin/study/leetcode/test&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/kristin/study/leetcode/test"
   }
-}</component>
-  <component name="RunManager" selected="Application.CountingBits">
+}]]></component>
+  <component name="RunManager" selected="Application.toogleCase">
     <configuration name="CountingBits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CountingBits" />
+      <option name="MAIN_CLASS_NAME" value="interviews.JPMorgan.CountingBits" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDuplicate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RemoveDuplicate" />
+    <configuration name="Fib" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviews.JPMorgan.Fib" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="adRotation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="adRotation" />
+      <option name="MAIN_CLASS_NAME" value="interviews.JPMorgan.adRotation" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -75,12 +82,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="toogleCase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interviews.JPMorgan.toogleCase" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="interviews.JPMorgan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.toogleCase" />
+        <item itemvalue="Application.Fib" />
         <item itemvalue="Application.CountingBits" />
         <item itemvalue="Application.adRotation" />
         <item itemvalue="Application.plusOne" />
-        <item itemvalue="Application.RemoveDuplicate" />
       </list>
     </recent_temporary>
   </component>

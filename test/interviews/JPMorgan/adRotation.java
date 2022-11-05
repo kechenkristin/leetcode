@@ -1,3 +1,5 @@
+package interviews.JPMorgan;
+
 public class adRotation {
     public static String intoBinary(int decimal) {
         return Integer.toBinaryString(decimal);
