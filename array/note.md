@@ -39,3 +39,55 @@ class Solution {
     }
 }
 ```
+
+## 1365 How Many Numbers Are Smaller Than the Current Number
+1. link
+https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
+
+2. code
+- brute force
+```java
+class Solution {
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int[] ret = new int[nums.length];
+        for (int i = 0; i < ret.length; i++) {
+            ret[i] = findSmallCount(nums, nums[i]);
+        }
+        return ret;
+    }
+    
+    private int findSmallCount(int[] nums, int n) {
+        int count = 0;
+        for (int num : nums) {
+            if (num < n) count++;
+        }
+        return count;
+    }
+}
+```
+
+- hashmap
+```java
+class Solution {
+    public int[] smallerNumbersThanCurrent(int[] nums) {
+        int n = nums.length;
+
+        //克隆数组
+        int[] var = new int[n];
+        var = nums.clone();
+
+        //将nums从小到大排序
+        Arrays.sort(nums);
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            if (!map.containsKey(nums[i])) map.put(nums[i], i);
+        }
+
+        for (int i = 0; i < n; i++) {
+            var[i] = map.get(var[i]);
+        }
+        return var;
+    }
+}
+```
+
