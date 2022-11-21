@@ -1,3 +1,4 @@
+# HashMap
 ## 1. Two Sum
 1. link
 https://leetcode.com/problems/two-sum/
@@ -91,3 +92,89 @@ class Solution {
 }
 ```
 
+### 1528 Shuffle String 
+'''java
+class Solution {
+    public String restoreString(String s, int[] indices) {
+        
+        char[] newArr = new char[s.length()];
+        HashMap<Integer, Character> map = new HashMap();
+        
+        for (int i = 0; i < indices.length; i++) {
+            map.put(indices[i], s.charAt(i));
+        }
+        
+        for (int i = 0; i < indices.length; i++) {
+            newArr[i] = map.get(i);
+        }
+        return String.valueOf(newArr);
+    }
+}
+```
+
+
+# Insert
+## Insert Logic
+```java
+public static int[] insert(int[] arr, int item, int position) {
+	int n = arr.length + 1;
+	int[] ret = new int[n];
+
+	for (int i = 0; i < index; i++) {
+		ret[i] = arr[i];
+	}
+	
+	ret[index] = item;
+
+	for (int i = index; i < n - 1; i++) {
+		ret[i + 1] = arr[i];
+	}
+	return ret;
+}
+```
+
+## 1389 Create Target Array in the Given Order
+- hashmap
+```java
+class Solution {
+    public int[] createTargetArray(int[] nums, int[] index) {
+        int n = nums.length;
+        int[] ret = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            ret = insert(nums[i], index[i], ret);
+        }
+        return ret;
+    }
+    
+    private int[] insert(int val, int index, int[] arr) {
+        int[] ret = new int[arr.length];
+        for (int i = 0; i < index; i++) {
+            ret[i] = arr[i];
+        }
+        
+        ret[index] = val;
+
+        for (int i = index; i < arr.length - 1; i++) {
+            ret[i + 1] = arr[i];
+        }
+        return ret;
+    }
+}
+```
+
+- index method
+```java
+class Solution {
+    public String restoreString(String s, int[] indices) {
+        int n = indices.length;
+        char[] chars = s.toCharArray();
+        char[] new_char = new char[n];
+        
+        for (int i = 0; i < n; i++) {
+            new_char[indices[i]] = chars[i];
+        }
+        return String.valueOf(new_char);
+    }
+}
+```
