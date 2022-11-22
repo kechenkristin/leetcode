@@ -93,7 +93,7 @@ class Solution {
 ```
 
 ### 1528 Shuffle String 
-'''java
+```java
 class Solution {
     public String restoreString(String s, int[] indices) {
         
@@ -115,6 +115,7 @@ class Solution {
 
 # Insert
 ## Insert Logic
+
 ```java
 public static int[] insert(int[] arr, int item, int position) {
 	int n = arr.length + 1;
