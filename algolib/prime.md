@@ -51,10 +51,10 @@ public static List<Integer> primes(int n) {
 
 2. Sieve of Eratosthenes
 
-1. wiki
+- wiki
 https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
-2. code
+- code
 ```java
 public static boolean[] isPrimes(int n) {
 	boolean[] isPrime = new boolean[n + 1];
@@ -89,5 +89,5 @@ public static List<Integer> Eprimes(int n) {
 }
 ```
 
-3. leetcode 204
+- leetcode 204
 https://leetcode.com/problems/count-primes/

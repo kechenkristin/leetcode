@@ -18,13 +18,14 @@ public int fib(int n) {
         fibs[0] = 0;
         fibs[1] = 1;
         
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             fibs[i] = fibs[i - 1] + fibs[i - 2];
         }
         
         return fibs[n];
     }
 ```
+- iterative way
 
 ```java
 public int fib(int n) {
@@ -36,7 +37,9 @@ public int fib(int n) {
         
         for (int i = 2; i <= n; i++) {
             cur = prev2 + prev1;
+	// update prev2
             prev2 = prev1;
+	// update prev1
             prev1 = cur;
         }
         
@@ -46,9 +49,11 @@ public int fib(int n) {
 
 ### leetcode
 1. 509 Fibonacci Number
+
 https://leetcode.com/problems/fibonacci-number/
 
 2. useful res
+
 https://leetcode.com/problems/fibonacci-number/discuss/1109647/5-ways-to-Solve-this-problem
 
 https://leetcode.com/discuss/explore/april-leetcoding-challenge-2021/1159786/fibonacci-number-easy-solution-w-multiple-approaches-explained
