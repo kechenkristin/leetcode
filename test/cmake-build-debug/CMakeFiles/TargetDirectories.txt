@@ -1,0 +1,3 @@
+/home/kristin/study/leetcode/test/cmake-build-debug/CMakeFiles/test.dir
+/home/kristin/study/leetcode/test/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kristin/study/leetcode/test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
