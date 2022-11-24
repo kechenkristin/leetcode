@@ -41,4 +41,6 @@ class Solution {
 
 367 https://leetcode.com/submissions/detail/821162308/
 
+208 https://leetcode.com/problems/find-target-indices-after-sorting-array/
 
+278 https://leetcode.com/problems/first-bad-version/

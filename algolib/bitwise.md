@@ -1,4 +1,31 @@
 # bitwise
+## pre knowledge
+1. cs61c sp21  
+https://inst.eecs.berkeley.edu/~cs61c/sp22/pdfs/lectures/lec01.pdf  
+- Two's Complement
+	- positive 它的二进制表示本身
+	- negative 
+		- decimal -> binary  
+		eg. -7
+```
+Unsigned: 0b00111
+Flip bits: 0b11000
+Add one: 0b11001
+```
+		- binary -> decimal
+```
+Flip bits: 0b00101
+Add one: 0b00110
+Answer: -6
+```
+		
+2. 知乎文章  
+https://www.zhihu.com/question/38206659
+
+3. 偶数的二进制表示总是100000(1若干0）  
+(even - 1) into binary 011111(0若干1)
+
+
 ## and &
 1. rule
 
@@ -150,7 +177,8 @@ a >> 3;
 ```
 
 # leetcode
-1. swap number
+## XOR
+### 1.swap number
 - code
 ```cpp
 void swap(int& a, int&b) {
@@ -160,133 +188,7 @@ void swap(int& a, int&b) {
 }
 ```
 
-- note
-
-2. 231 power of two
-- link
-
-https://leetcode.com/problems/power-of-two/
-
-- code
-```cpp
-class Solution {
-public:
-    bool isPowerOfTwo(int n) {
-        return (n > 0) && ((n & (n - 1)) == 0);
-    }
-};
-```
-
-- note
-
-A num is power of two iff
-	- num > 0
-	- binary representation 1000000(1 加若干零)
-	- (num - 1)'s binary representation 0111111(0 加若干1)
-	- 对形如100000和0111111的式子做 &，结果总为0.
-
-3. power of 4
-- note
-一个数只要满足是2的幂，并且模3等于1,就一定是4的幂。
-
-- link
-
-https://leetcode.com/problems/power-of-four/
-
-- code
-```cpp
-class Solution {
-public:
-    bool isPowerOfFour(int n) {
-        return (n > 0) && ((n & (n - 1)) == 0) && (n % 3 == 1);
-    }
-};
-```
-
-4. 191 Number of 1 Bits
-
-- link
-https://leetcode.com/problems/number-of-1-bits/
-
-- code 
-```cpp
-class Solution {
-public:
-    int hammingWeight(uint32_t n) {
-        int count = 0;
-        while (n) {
-            n &= (n - 1);
-            count++;
-        }
-        return count;
-    }
-};
-```
-
-- note
-	- 消1 n &= (n - 1) 形如100000(1若干0)的数，减1(01111111), 再与就可以把一消去
-	- 利用此思想，依次消去一，统计总共消去了几次一
-
-
-5. 338 Counting Bit
-- link
-https://leetcode.com/problems/counting-bits/
-- code
-```cpp
-class Solution {
-public:
-    int bits1Count(int num) {
-        int count = 0;
-        while (num) {
-            num &= (num - 1);
-            count++;
-        }
-        return count;
-    }
-    
-    
-    vector<int> countBits(int n) {
-        vector<int> ans;
-        
-        for (int i = 0; i <= n; i++) {
-            ans.push_back(bits1Count(i));
-        }
-        
-        return ans;
-    };
-};
-```
-
-6. 461 Hamming Distance
-- link
-https://leetcode.com/problems/hamming-distance/
-
-- code
-```cpp
-class Solution {
-public:
-    int hammingDistance(int x, int y) {
-        return count1Bits(x ^ y);
-    }
-    
-    int count1Bits(int num) {
-        int count = 0;
-        while (num) {
-            num &= (num - 1);
-            count++;
-        }
-        return count;
-    }
-};
-```
-
-- note
-汉明距离实际上是比较两个数x, y二进制表示不同的个数。  
-计算x y 异或后二进制表示的1的个数.
-
-
-
-5. 136 single number
+### 2.single number 136
 - link
 https://leetcode.com/problems/single-number/
 - code
@@ -320,4 +222,182 @@ public:
 	    = 4 ^ 0 ^ 0  
 	    = 4
 ```
-	    
+
+### 3. Missing Number
+- link
+https://leetcode.com/problems/missing-number/
+
+- code
+```cpp
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        /*
+        std::sort(nums.begin(), nums.end());
+        
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] != i) return i;
+        }
+        return nums.size();
+        */
+        
+        std::sort(nums.begin(), nums.end());
+        int ans = 0;
+        
+        for (int i = 0; i < nums.size(); i++) {
+            ans = ans ^ nums[i] ^ i;
+        }
+        
+        ans ^= nums.size();
+        return ans;
+    }
+};
+```
+
+## Power of Two
+### 1. power of two 231
+- link
+
+https://leetcode.com/problems/power-of-two/
+
+- code
+```cpp
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        return (n > 0) && ((n & (n - 1)) == 0);
+    }
+};
+```
+
+- note
+
+A num is power of two iff
+	- num > 0
+	- binary representation 1000000(1 加若干零)
+	- (num - 1)'s binary representation 0111111(0 加若干1)
+	- 对形如100000和0111111的式子做 &，结果总为0.
+
+### 2. power of 4
+- note
+一个数只要满足是2的幂，并且模3等于1,就一定是4的幂。
+
+- link
+
+https://leetcode.com/problems/power-of-four/
+
+- code
+```cpp
+class Solution {
+public:
+    bool isPowerOfFour(int n) {
+        return (n > 0) && ((n & (n - 1)) == 0) && (n % 3 == 1);
+    }
+};
+```
+
+## Count Number of 1 Bits
+### 1. Number of 1 Bits 191
+
+- link
+https://leetcode.com/problems/number-of-1-bits/
+
+- code 
+```cpp
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int count = 0;
+        while (n) {
+            n &= (n - 1);
+            count++;
+        }
+        return count;
+    }
+};
+```
+
+- note
+	- 消1 n &= (n - 1) 形如100000(1若干0)的数，减1(01111111), 再与就可以把一消去
+	- 利用此思想，依次消去一，统计总共消去了几次一
+
+
+### 2. Counting Bit 338
+- link
+https://leetcode.com/problems/counting-bits/
+- code
+```cpp
+class Solution {
+public:
+    int bits1Count(int num) {
+        int count = 0;
+        while (num) {
+            num &= (num - 1);
+            count++;
+        }
+        return count;
+    }
+    
+    
+    vector<int> countBits(int n) {
+        vector<int> ans;
+        
+        for (int i = 0; i <= n; i++) {
+            ans.push_back(bits1Count(i));
+        }
+        
+        return ans;
+    };
+};
+```
+
+### 3. Hamming Distance 461
+- link
+https://leetcode.com/problems/hamming-distance/
+
+- code
+```cpp
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        return count1Bits(x ^ y);
+    }
+    
+    int count1Bits(int num) {
+        int count = 0;
+        while (num) {
+            num &= (num - 1);
+            count++;
+        }
+        return count;
+    }
+};
+```
+
+- note
+汉明距离实际上是比较两个数x, y二进制表示不同的个数。  
+计算x y 异或后二进制表示的1的个数.
+
+### 4. Minimum Bit Flips to Convert Number 2220
+- link
+
+https://leetcode.com/problems/minimum-bit-flips-to-convert-number/
+
+- code
+```cpp
+class Solution {
+public:
+    int minBitFlips(int start, int goal) {
+        return bit1Count(start^goal);
+    }
+    
+    int bit1Count(int num) {
+        int count = 0;
+        while (num) {
+            num &= (num - 1);
+            count++;
+        }
+        return count;
+    }
+};
+```
