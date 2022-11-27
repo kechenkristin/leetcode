@@ -148,3 +148,38 @@ public:
 };
 ```
 
+### 4. Happy number 202
+- link
+
+https://leetcode.com/problems/happy-number/
+
+- res
+
+https://github.com/kechenkristin/leetcode-master/blob/master/problems/0202.%E5%BF%AB%E4%B9%90%E6%95%B0.md
+
+- code
+```cpp
+class Solution {
+    public boolean isHappy(int n) {
+        Set<Integer> hash = new HashSet();
+        // if hash contains n, then infinite loop
+        while (n != 1 && !hash.contains(n)) {
+            hash.add(n);
+            n = digitSum(n);
+        }
+        
+        return n == 1;
+    }
+    
+    
+    private int digitSum(int num) {
+        int sum = 0;
+        while (num > 0) {
+            sum += (num % 10) * (num % 10);
+            num /= 10;
+        }
+        return sum;
+    }
+}
+```
+
