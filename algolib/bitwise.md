@@ -69,6 +69,21 @@ eg2: get 1010 1110 的第四位
  0 0 0 0 1 0 0 0
 ```
 
+
+```c
+// Return the nth bit of x.
+// Assume 0 <= n <= 31
+unsigned get_bit(unsigned x,
+                 unsigned n) {
+    // Returning -1 is a placeholder (it makes
+    // no sense, because get_bit only returns 
+    // 0 or 1)
+    x >>= n;
+    return x & 1;
+}
+```
+
+
 - 判断奇偶
 偶数最末位是0,奇数最末位是1。
 
