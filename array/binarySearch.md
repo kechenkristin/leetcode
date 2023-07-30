@@ -35,12 +35,12 @@ class Solution {
 
 35 https://leetcode.com/submissions/detail/820384962/ 
 
-34 https://leetcode.com/submissions/detail/820410885/
+34 https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
 
-69 https://leetcode.com/submissions/detail/821144453/
+69 https://leetcode.com/problems/sqrtx/description/
 
-367 https://leetcode.com/submissions/detail/821162308/
+367 https://leetcode.com/problems/valid-perfect-square/description/
 
-208 https://leetcode.com/problems/find-target-indices-after-sorting-array/
+2089 https://leetcode.com/problems/find-target-indices-after-sorting-array/
 
-278 https://leetcode.com/problems/first-bad-version/
+278 https://leetcode.com/problems/first-bad-version/description/
