@@ -43,4 +43,6 @@ class Solution {
 
 2089 https://leetcode.com/problems/find-target-indices-after-sorting-array/
 
-278 https://leetcode.com/problems/first-bad-version/description/
+278 https://leetcode.com/problems/first-bad-version/
+
+374 https://leetcode.com/problems/guess-number-higher-or-lower/

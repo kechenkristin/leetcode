@@ -57,6 +57,64 @@ def targetIndices(nums, target):
     return ret
 
 
+def sortedSquares(nums):
+    """
+    leftIndex, rightIndex, result = 0, len(nums) - 1, len(nums) - 1
+
+    ret = len(nums) * [0]
+    while leftIndex <= rightIndex:
+        left = nums[leftIndex] * nums[leftIndex]
+        right = nums[rightIndex] * nums[rightIndex]
+
+        if right > left:
+            ret[result] = right
+            rightIndex -= 1
+        else:
+            ret[result] = left
+            left += 1
+
+        result -= 1
+
+    return ret
+    """
+    return sorted(list(map((lambda x: x ** 2), nums)))
+
+
+def removeDuplicates(nums):
+    nums = list(set(nums))
+    return len(nums)
+
+
+def merge(nums1, m: int, nums2, n: int):
+    """
+    Do not return anything, modify nums1 in-place instead.
+    """
+    index, left, right = 0, 0, 0
+    ret = (m + n) * [0]
+
+    while (left < m and right < n):
+        if nums1[left] <= nums2[right]:
+            ret[index] = nums1[left]
+            left += 1
+        else:
+            ret[index] = nums2[right]
+            right += 1
+        index += 1
+
+    while left < m:
+        ret[index] = nums1[left]
+        left += 1
+        index += 1
+
+    while right < n:
+        ret[index] = nums2[right]
+        right += 1
+        index += 1
+    return ret
+
+
 if __name__ == '__main__':
-    demo = [1,2,5,2,3]
-    print(targetIndices(nums=demo, target=2))
+    nums1 = [1, 2, 3, 0, 0, 0]
+    m, n = 3, 3
+    nums2 = [2, 5, 6]
+    print(merge(nums1, m, nums2, n))

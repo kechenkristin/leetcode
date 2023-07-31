@@ -20,13 +20,13 @@ class Solution {
 ```
 
 ### exercise
-27 https://leetcode.com/submissions/detail/821850153/
+27 https://leetcode.com/problems/remove-element/
 
-283 https://leetcode.com/submissions/detail/821855601/
+283 https://leetcode.com/problems/move-zeroes/
 
-977 https://leetcode.com/submissions/detail/823974695/
+977 https://leetcode.com/problems/squares-of-a-sorted-array/
 
-26 https://leetcode.com/problems/remove-duplicates-from-sorted-array/submissions/
+26 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 
 
