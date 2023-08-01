@@ -28,5 +28,8 @@ class Solution {
 
 26 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
+88 https://leetcode.com/problems/merge-sorted-array/
 
+344 https://leetcode.com/problems/reverse-string/
 
+202 https://leetcode.com/problems/happy-number/solutions/3767573/easy-java-solution-two-pointers-floyd-s-tortoise-and-hare-detailed-explanation/
