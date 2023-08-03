@@ -20,7 +20,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="" />
+    <list default="true" id="e9042f55-0d7d-4bda-8dbe-99715bfca5ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../array/slideWindows.md" beforeDir="false" afterPath="$PROJECT_DIR$/../array/slideWindows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,6 +172,7 @@
       <workItem from="1690734788914" duration="753000" />
       <workItem from="1690739442086" duration="1659000" />
       <workItem from="1690831985335" duration="3654000" />
+      <workItem from="1691097213244" duration="4359000" />
     </task>
     <servers />
   </component>
@@ -195,8 +200,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pytest.py</url>
-          <line>83</line>
-          <option name="timeStamp" value="21" />
+          <line>116</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytest.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -209,6 +219,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/test$pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1690837592857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1691101550955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

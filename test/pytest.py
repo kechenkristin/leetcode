@@ -113,8 +113,49 @@ def merge(nums1, m: int, nums2, n: int):
     return ret
 
 
+def containsNearbyDuplicate1(nums, k):
+    left, right = 0, 1
+
+    for right in range(1, len(nums)):
+        result = nums[left] == nums[right]
+        while result:
+            absLen = abs(right - left)
+            if absLen <= k and absLen != 0: return True
+            left += 1
+            result = nums[left] == nums[right]
+
+    while left < len(nums) - 1:
+        result = nums[left] == nums[right]
+        absLen = abs(right - left)
+        if absLen <= k and result: return True
+        left += 1
+
+    return False
+
+
+def containsNearbyDuplicate(nums, k):
+    left, right = 0, 1
+
+    for right in range(1, len(nums)):
+        result = nums[left] == nums[right] and abs(right - left) <= k
+        if result: return True
+
+        while abs(right - left) > k:
+            left += 1
+            # result = nums[left] == nums[right] and abs(right - left) <= k
+            # if result: return True
+            break
+
+    print()
+    return False
+
+
 if __name__ == '__main__':
-    nums1 = [1, 2, 3, 0, 0, 0]
-    m, n = 3, 3
-    nums2 = [2, 5, 6]
-    print(merge(nums1, m, nums2, n))
+    nums1 = [1, 0, 1, 1]
+    nums2 = [1, 2, 3, 1, 2, 3]
+    nums3 = [1, 2, 3, 1]
+    nums4 = [4, 1, 2, 3, 1, 5]
+    print(containsNearbyDuplicate(nums1, 1))  # true
+    print(containsNearbyDuplicate(nums2, 2))  # false
+    print(containsNearbyDuplicate(nums3, 3))  # false
+    print(containsNearbyDuplicate(nums4, 3))  # true
