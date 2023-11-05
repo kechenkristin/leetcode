@@ -130,3 +130,54 @@ def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
             result.append(level)
         return result
 ```
+
+## Example
+### LC226 Invert Binary Tree
+- recursive(not working for inoder)
+```python
+def invertTree(root):
+    if not root: return root
+    # if preorder
+    # root.left, root.right = root.right, root.left # swap
+    invertTree(root.left)
+    invertTree(root.right)
+    # postorder
+    root.left, root.right = root.right, root.left # swap
+    return root
+```
+
+- iterative
+  - BFS
+```python
+def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root: return root
+        queue = collections.deque([root])
+        while queue:
+            size = len(queue)
+            for _ in range(size):
+                curr = queue.popleft()
+                curr.left, curr.right = curr.right, curr.left
+                if curr.left: queue.append(curr.left)
+                if curr.right: queue.append(curr.right)
+        return root
+```
+
+- DFS (inorder)
+```python
+def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root: return root
+        stack = [root]
+
+        while stack:
+            node = stack.pop()
+            if node:
+                if node.right: stack.append(node.right)
+                stack.append(node)
+                stack.append(None)
+                if node.left: stack.append(node.left)
+            else:
+                node = stack.pop()
+                node.left, node.right = node.right, node.left
+
+        return root
+```
