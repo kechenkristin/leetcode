@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d12928e1-ff46-471c-947f-11339464e0b4" name="Changes" comment="add invert tree(lc226) totree traversal.md">
-      <change afterPath="$PROJECT_DIR$/DS/PQ/note.md" afterDir="false" />
+    <list default="true" id="d12928e1-ff46-471c-947f-11339464e0b4" name="Changes" comment="refactoring dir and add PQ note">
+      <change afterPath="$PROJECT_DIR$/algolib/backtracking/combination.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/Array.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/Array.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/binarySearch.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/binarySearch.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/fastSlowPointer.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/fastSlowPointer.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/forStep.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/forStep.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/slideWindows.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/array/slideWindows.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hashmap/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/hashmap/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/19removeFromEnd.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/linkedlist/19removeFromEnd.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/24swap.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/linkedlist/24swap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/LinkedList.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/DS/linkedlist/LinkedList.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/linkedlist/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linkedlist/pynote.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/linkedlist/pynote.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/20ValidParentheses.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/string/20ValidParentheses.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/traversal.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/PQ/tree/traversal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS/PQ/tree/traversal.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/tree/traversal.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +63,9 @@
       <workItem from="1699309984533" duration="599000" />
       <workItem from="1699391197168" duration="599000" />
       <workItem from="1699437096414" duration="599000" />
-      <workItem from="1699572683457" duration="327000" />
+      <workItem from="1699572683457" duration="515000" />
+      <workItem from="1699642126441" duration="618000" />
+      <workItem from="1699799689947" duration="2326000" />
     </task>
     <task id="LOCAL-00001" summary="add tree traversal.md">
       <option name="closed" value="true" />
@@ -94,7 +83,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699211856174</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactoring dir and add PQ note">
+      <option name="closed" value="true" />
+      <created>1699573139814</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699573139814</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +100,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tree traversal.md" />
     <MESSAGE value="add invert tree(lc226) totree traversal.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="add invert tree(lc226) totree traversal.md" />
+    <MESSAGE value="refactoring dir and add PQ note" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring dir and add PQ note" />
   </component>
 </project>
