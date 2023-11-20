@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d12928e1-ff46-471c-947f-11339464e0b4" name="Changes" comment="refactoring dir and add PQ note">
-      <change afterPath="$PROJECT_DIR$/DS/graph/note.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algolib/backtracking/remove_dup.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DS/graph/quick_union/quick_union.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DS/graph/search/graphAPI.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DS/graph/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/DS/graph/search/matrix.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DS/graph/search" />
       <recent name="$PROJECT_DIR$/DS" />
       <recent name="$PROJECT_DIR$/PQ" />
     </key>
@@ -72,6 +74,10 @@
       <workItem from="1700077279691" duration="596000" />
       <workItem from="1700139298834" duration="1191000" />
       <workItem from="1700237967581" duration="4163000" />
+      <workItem from="1700311227092" duration="12000" />
+      <workItem from="1700342236392" duration="599000" />
+      <workItem from="1700412923549" duration="1509000" />
+      <workItem from="1700516033824" duration="1688000" />
     </task>
     <task id="LOCAL-00001" summary="add tree traversal.md">
       <option name="closed" value="true" />
