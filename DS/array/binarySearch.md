@@ -46,3 +46,5 @@ class Solution {
 278 https://leetcode.com/problems/first-bad-version/
 
 374 https://leetcode.com/problems/guess-number-higher-or-lower/
+
+71 https://leetcode.com/problems/search-a-2d-matrix/
